@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Password Generator: Improve your privacy</title>    
+    </head>
+    <body>
+        <div id="container">
+            <div id="hero">
+                <h1><span id="green-title">Generate a</span><br>random password</h1>
+                <h3>Never use an insecure password again.</h3>
+            </div>
+            <div id="render">
+                <button id="generator-el" >Generate passwords</button>
+                <p>Choose a length between 8 and 15: </p>
+                <input type="number" id="range-el" min="8" max="15" value="8">
+                <hr>
+            </div>
+            <div id="result">
+                <div class="text-result">
+                    <p class="password-one" id="password-one-el"></p>
+                    <span class="material-symbols-outlined" onclick="copyText1()">
+                        content_copy
+                    </span>
+                </div>                        
+                    
+                <div class="text-result">
+                    <p class="password-two" id="password-two-el"></p>
+                    <span class="material-symbols-outlined" onclick="copyText2()">
+                        content_copy
+                    </span>
+                </div>                
+            </div>        
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
